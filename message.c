@@ -1,4 +1,4 @@
-#include "message.h"
+#include "message.c"
 
 void send_message(struct message_strct* message, int socket_desc) {
     if (write(socket_desc, message, sizeof(struct message_strct)) < 0) {
